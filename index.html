@@ -217,7 +217,6 @@
             <a href="#" onclick="showScreen('roleScreen')" style="color:var(--primary); text-decoration:none;">← Back</a>
         </div>
         <h2>Author Login</h2>
-        <p style="color:var(--muted); font-size:0.8rem; margin-bottom:10px;">(Default: <b>admin</b> / <b>indore123</b>)</p>
         <input type="text" id="authorUser" placeholder="Username">
         <input type="password" id="authorPass" placeholder="Password">
         <button class="btn btn-primary" onclick="loginAuthor()">Login as Author</button>
@@ -473,7 +472,7 @@
         window.loginAuthor = function() {
             const u = document.getElementById('authorUser').value.trim();
             const p = document.getElementById('authorPass').value.trim();
-            if (u === "admin" && p === "indore123") {
+            if (u === "Amit" && p === "indore01") {
                 isAuthorLoggedIn = true;
                 showScreen('authorDashboard');
                 renderAdminPanel();
